@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#accordion {
+  width: 800px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#accordion li {
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.3s ease;
+}
+
+#accordion li:last-child {
+  border-bottom: none;
+}
+
+#accordion li:hover {
+  background: rgba(245, 245, 245, 0.9);
+}
+
+#accordion li label {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#accordion li label:hover {
+  color: #667eea;
+}
+
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #667eea;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#accordion label + input[type="radio"] {
+  display: none;
+}
+
+#accordion .content {
+  padding: 0 20px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+  padding: 20px;
+}
+
+#accordion .content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Animation for the arrow */
+#accordion label + input[type="radio"]:checked + .content + label span {
+  transform: rotate(270deg);
+}

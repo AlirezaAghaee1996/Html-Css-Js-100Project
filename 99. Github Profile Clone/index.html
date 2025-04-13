@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <i class="fa-brands fa-github"></i>
+      <section class="nav-container">
+        <ul>
+          <li>
+            <a href="#">Product <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li><a href="#">Open Source</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+        <form id="searchForm">
+          <input type="text" placeholder="Search GitHub" id="searchInput" />
+        </form>
+      </section>
+
+      <div class="btns-container">
+        <a href="#">Sign In</a>
+        <button>Sign Up</button>
+      </div>
+    </nav>
+
+    <header>
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <i class="fa-solid fa-book-open"></i> Overview
+          </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-folder"></i> Repositories </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-cloud"></i> Projects </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-cube"></i> Packages </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-star"></i> Stars </a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="main-container">
+      <div class="about-user"></div>
+      <main>
+        <p>Popular Repositories</p>
+        <div class="repos"></div>
+      </main>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

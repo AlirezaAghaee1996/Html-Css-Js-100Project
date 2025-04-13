@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #525252, #000);
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+p {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.js {
+  color: #ffd700; /* Gold color for JavaScript */
+  font-weight: 600;
+}
+
+.typed-text {
+  color: #20c20e; /* Green color for typed text */
+  font-weight: 500;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background: #20c20e; /* Green color for cursor */
+  margin-left: 4px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

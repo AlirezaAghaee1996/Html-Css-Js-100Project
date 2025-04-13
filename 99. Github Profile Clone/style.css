@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #161b22;
+  --secondary-color: #0d1117;
+  --accent-color: #238636;
+  --text-color: #c9d1d9;
+}
+
+body {
+  background: var(--secondary-color);
+  font-family: "Hubot-Sans", sans-serif;
+  color: var(--text-color);
+}
+
+/* ************************** Navigation ************************** */
+nav {
+  background: var(--primary-color);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+ul li a {
+  color: var(--text-color);
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #58a6ff;
+}
+
+nav form {
+  width: 30%;
+}
+
+nav form input {
+  background: var(--secondary-color);
+  padding: 8px 12px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  width: 100%;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+nav form input::placeholder {
+  color: #8b949e;
+}
+
+/* ************************** Header ************************** */
+header {
+  border-bottom: 1px solid #30363d;
+  padding: 10px 0;
+}
+
+.active {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.btns-container {
+  display: flex;
+  align-items: center;
+}
+
+.btns-container a {
+  color: var(--text-color);
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.btns-container a:hover {
+  color: #58a6ff;
+}
+
+.btns-container button {
+  background: var(--accent-color);
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btns-container button:hover {
+  background: #2ea043;
+}
+
+/* ************************** Main Container ************************** */
+.main-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.about-user {
+  width: 30%;
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-avatar {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.user-bio {
+  font-size: 14px;
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+.followers-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.followers-info a {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-container i {
+  color: #8b949e;
+}
+
+main {
+  width: 70%;
+}
+
+main p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.repo-card {
+  background: var(--primary-color);
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 20px;
+  width: calc(50% - 10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.repo-title {
+  color: #58a6ff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.repo-subtitle {
+  color: #8b949e;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.popularity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #8b949e;
+  font-size: 14px;
+}
+
+.stars,
+.fork {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pill {
+  background: #238636;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* ************************** Icons ************************** */
+.fa-github {
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.fa-solid,
+.fa-regular {
+  color: #8b949e;
+}
